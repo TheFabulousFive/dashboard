@@ -16,7 +16,7 @@ class Attendee(models.Model):
 
 
 class ContentEvent(models.Model):
-    """Content events are information gather from the content ID API."""
+    """Content events are information gathered from the content ID API."""
     performance = models.ForeignKey('Performance', models.PROTECT)
     timestamp = models.DateTimeField(_("timestamp"), auto_now_add=True)
 
