@@ -247,14 +247,14 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID", "Name", "Salary", "Country", "City"];
+const thArray = ["Act", "Stage", "Fans Captured", "Positive", "Negative"];
 const tdArray = [
-  ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-  ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-  ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-  ["4", "Philip Chaney", "$38,735", "Korea, South", "Overland Park"],
-  ["5", "Doris Greene", "$63,542", "Malawi", "Feldkirchen in Kärnten"],
-  ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+  ["Maywas Denki", "Boombox", "1,232", "Niger", "Oud-Turnhout"],
+  ["Maywas Denki", "Neon Garden", "1,624", "Curaçao", "Sinaai-Waas"],
+  ["Maywas Denki", "Circuit Grounds", "997", "Netherlands", "Baileux"],
+  ["Maywas Denki", "Magic Playground", "1,034", "Korea, South", "Overland Park"],
+  ["Maywas Denki", "Unicorn Castle", "756", "Malawi", "Feldkirchen in Kärnten"],
+  ["Maywas Denki", "Zip Lines", "1,407", "Chile", "Gloucester"]
 ];
 
 //
