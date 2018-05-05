@@ -1,7 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard";
 import FestivalProfile from "views/FestivalProfile/FestivalProfile";
 import Maps from "views/Maps/Maps";
-import Notifications from "views/Notifications/Notifications";
 import TableList from "views/TableList/TableList";
 
 const dashboardRoutes = [
@@ -23,10 +22,10 @@ const dashboardRoutes = [
     icon: "pe-7s-note2",
     component: TableList
   },
-  { 
-    path: "/maps", 
-    name: "Fan Activity Map", 
-    icon: "pe-7s-map-marker", 
+  {
+    path: "/maps",
+    name: "Fan Activity Map",
+    icon: "pe-7s-map-marker",
     component: Maps },
   { redirect: true, path: "/", to: "/dashboard", name: "Dashboard" }
 ];
