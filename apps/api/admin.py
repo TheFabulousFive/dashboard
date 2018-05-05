@@ -20,11 +20,13 @@ class DataEventAdmin(admin.ModelAdmin):
 
 @admin.register(Performance)
 class PerformanceAdmin(admin.ModelAdmin):
+    list_display = ("name", "location", "duration", "start_time", "end_time")
     prepopulated_fields = {"slug": ("name",)}
     search_fields = ("name", "slug")
 
 
 @admin.register(Stage)
 class StageAdmin(admin.ModelAdmin):
+    list_display = ("name",)
     prepopulated_fields = {"slug": ("name",)}
     search_fields = ("name", "slug")

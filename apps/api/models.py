@@ -1,5 +1,3 @@
-import uuid
-
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -58,6 +56,13 @@ class Performance(models.Model):
     class Meta:
         verbose_name = _("performance")
         verbose_name_plural = _("performances")
+
+    @property
+    def duration(self):
+        return self.end_time - self.start_time
+
+    def __str__(self):
+        return self.name
 
 
 class Stage(models.Model):
