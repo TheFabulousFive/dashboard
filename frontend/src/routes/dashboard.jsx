@@ -8,31 +8,32 @@ const dashboardRoutes = [
     path: "/dashboard",
     name: "Dashboard",
     icon: "pe-7s-graph",
-    component: Dashboard
+    component: Dashboard,
   },
   {
     path: "/user",
     name: "Festival Profile",
     icon: "pe-7s-user",
-    component: FestivalProfile
+    component: FestivalProfile,
   },
   {
     path: "/table",
     name: "Live Engagement",
     icon: "pe-7s-note2",
-    component: TableList
+    component: TableList,
   },
-  { 
+  {
+    path: "/engagement",
     name: "Fan Engagement",
     icon: "pe-7s-note2",
-    component: TableList
+    component: TableList,
   },
   {
     path: "/maps",
     name: "Fan Activity Map",
-    icon: "pe-7s-map-marker"
-    component: Maps },
-  
+    icon: "pe-7s-map-marker",
+    component: Maps,
+  },
   { redirect: true, path: "/", to: "/dashboard", name: "Dashboard" }
 ];
 
