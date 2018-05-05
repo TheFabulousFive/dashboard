@@ -1,0 +1,37 @@
+{% load static %}
+{% load cra_helper_tags %}
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <!--
+        manifest.json provides metadata used when your web app is added to the
+        homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+        -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon.png">
+
+        <title>Dashboard | After Party</title>
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <noscript>
+        You need to enable JavaScript to run this app.
+        </noscript>
+        <div id="root">
+
+        </div>
+        <script>
+          // This view's context['props'] (see views.index) will get injected here
+          window.props = {{ props | json }};
+        </script>
+        {% if bundle_js %}<script type="text/javascript" src="{{ bundle_js }}"></script>{% endif %}
+    </body>
+</html>

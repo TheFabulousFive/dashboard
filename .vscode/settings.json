@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "/Users/mmiller/.local/share/virtualenvs/Hack_Till_Dawn-eiHGCu09/bin/python",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true
+}
