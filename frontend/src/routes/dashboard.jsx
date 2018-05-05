@@ -21,12 +21,11 @@ const dashboardRoutes = [
     path: "/table",
     name: "Fan Rengagement",
     icon: "pe-7s-note2",
-    component: FanRengagement
   },
-  { 
-    path: "/maps", 
-    name: "Fan Activity Map", 
-    icon: "pe-7s-map-marker", 
+  {
+    path: "/maps",
+    name: "Fan Activity Map",
+    icon: "pe-7s-map-marker",
     component: Maps },
   { redirect: true, path: "/", to: "/dashboard", name: "Dashboard" }
 ];
