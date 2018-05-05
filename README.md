@@ -14,7 +14,7 @@ An analytics dashboard powered by Django + React
 Run the following command to install Python dependencies:
 
 ```
-$> pipenv install
+$> pipenv install -d
 ```
 
 Then, go to the frontend directory and install JS dependencies:
