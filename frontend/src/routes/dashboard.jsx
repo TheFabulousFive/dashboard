@@ -1,7 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard";
 import FestivalProfile from "views/FestivalProfile/FestivalProfile";
 import Maps from "views/Maps/Maps";
-import Notifications from "views/Notifications/Notifications";
 import TableList from "views/TableList/TableList";
 
 const dashboardRoutes = [
@@ -19,7 +18,7 @@ const dashboardRoutes = [
   },
   {
     path: "/table",
-    name: "Fan Engagement",
+    name: "Live Engagement",
     icon: "pe-7s-note2",
     component: TableList
   },
