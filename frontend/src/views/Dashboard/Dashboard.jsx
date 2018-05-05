@@ -5,20 +5,6 @@ import { tdArray, thArray } from "variables/Variables.jsx";
 import { Card } from "components/Card/Card.jsx";
 import { StatsCard } from "components/StatsCard/StatsCard.jsx";
 
-// import {
-//   dataBar,
-//   dataPie,
-//   dataSales,
-//   legendBar,
-//   legendPie,
-//   legendSales,
-//   optionsBar,
-//   optionsSales,
-//   responsiveBar,
-//   responsiveSales
-// } from "variables/Variables.jsx";
-
-
 class Dashboard extends Component {
   render() {
     return (
@@ -28,23 +14,22 @@ class Dashboard extends Component {
             <Col lg={4} sm={12}>
               <StatsCard
                 id="stats-card"
-                statsValue="105GB"
-                statsText="Capacity"
+                statsValue="3,257"
+                statsText="Total Unique Fans Engaged"
               />
             </Col>
             <Col lg={4} sm={12}>
               <StatsCard
                 id="stats-card"
-                statsText="Revenue"
-                statsValue="$1,345"
+                statsText="Active Stages"
+                statsValue="8"
               />
             </Col>
             <Col lg={4} sm={12}>
               <StatsCard
                 id="stats-card"
-                // bigIcon={<i className="fa fa-twitter text-info" />}
-                statsText="Followers"
-                statsValue="+45"
+                statsText="Fan Approval"
+                statsValue="9.5"
               />
             </Col>
           </Row>
