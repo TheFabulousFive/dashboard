@@ -53,6 +53,7 @@ pre.prettyprint{
     border-radius: 50%;
     border: 1px solid #333333;
     width: 50px;
+    height: 50px;
     float: left;
 }
 .header-wrapper {

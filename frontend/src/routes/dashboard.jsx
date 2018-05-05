@@ -18,6 +18,11 @@ const dashboardRoutes = [
   },
   {
     path: "/table",
+    name: "Live Engagement",
+    icon: "pe-7s-note2",
+    component: TableList
+  },
+  { 
     name: "Fan Engagement",
     icon: "pe-7s-note2",
     component: TableList
@@ -25,8 +30,9 @@ const dashboardRoutes = [
   {
     path: "/maps",
     name: "Fan Activity Map",
-    icon: "pe-7s-map-marker",
+    icon: "pe-7s-map-marker"
     component: Maps },
+  
   { redirect: true, path: "/", to: "/dashboard", name: "Dashboard" }
 ];
 
