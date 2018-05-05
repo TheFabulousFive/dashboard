@@ -26,6 +26,7 @@ class Attendee(models.Model):
 
 class ContentEvent(models.Model):
     """Content events are information gathered from the content ID API."""
+    # TODO: change to location
     performance = models.ForeignKey('Performance', models.PROTECT)
     timestamp = models.DateTimeField(_("timestamp"), auto_now_add=True)
 
@@ -48,6 +49,7 @@ class DataEvent(models.Model):
 
 class Performance(models.Model):
     """Festival performance data"""
+    slug = models.SlugField(_("slug"), unique=True)
     name = models.CharField(_("name"), max_length=80)
     location = models.ForeignKey('Stage', models.PROTECT)
     start_time = models.DateTimeField(_("start time"))
@@ -60,9 +62,12 @@ class Performance(models.Model):
 
 class Stage(models.Model):
     """Festival stages"""
-    slug = models.SlugField(_("slug"))
+    slug = models.SlugField(_("slug"), unique=True)
     name = models.CharField(_("name"), max_length=80)
 
     class Meta:
         verbose_name = _("stages")
         verbose_name_plural = _("stages")
+
+    def __str__(self):
+        return self.name

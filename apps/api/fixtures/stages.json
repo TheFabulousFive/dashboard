@@ -1,0 +1,82 @@
+[
+  {
+    "model": "api.stage",
+    "pk": 1,
+    "fields": {
+      "slug": "kinetic-field",
+      "name": "kineticFIELD"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 2,
+    "fields": {
+      "slug": "cosmic-meadow",
+      "name": "cosmicMEADOW"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 3,
+    "fields": {
+      "slug": "circuit-grounds",
+      "name": "circuitGROUNDS"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 4,
+    "fields": {
+      "slug": "neon-garden",
+      "name": "neonGARDEN"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 5,
+    "fields": {
+      "slug": "bass-pod",
+      "name": "bassPOD"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 6,
+    "fields": {
+      "slug": "waste-land",
+      "name": "wasteLAND"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 7,
+    "fields": {
+      "slug": "quantum-valley",
+      "name": "quantumVALLEY"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 8,
+    "fields": {
+      "slug": "stereo-bloom",
+      "name": "stereoBLOOM"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 9,
+    "fields": {
+      "slug": "parliament-art-car",
+      "name": "Parliament Art Car"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 10,
+    "fields": {
+      "slug": "wide-awake-art-car",
+      "name": "Wide Awake Art Car"
+    }
+  }
+]
