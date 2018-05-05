@@ -3,28 +3,28 @@ from django.contrib import admin
 from .models import (Attendee, ContentEvent, DataEvent, Performance, Stage)
 
 
+@admin.register(Attendee)
 class AttendeeAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(ContentEvent)
 class ContentEventAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(DataEvent)
 class DataEventAdmin(admin.ModelAdmin):
     pass
 
 
+@admin.register(Performance)
 class PerformanceAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {"slug": ("name",)}
+    search_fields = ("name", "slug")
 
 
+@admin.register(Stage)
 class StageAdmin(admin.ModelAdmin):
-    pass
-
-
-admin.site.register(Attendee, AttendeeAdmin)
-admin.site.register(ContentEvent, ContentEventAdmin)
-admin.site.register(DataEvent, DataEventAdmin)
-admin.site.register(Performance, PerformanceAdmin)
-admin.site.register(Stage, StageAdmin)
+    prepopulated_fields = {"slug": ("name",)}
+    search_fields = ("name", "slug")

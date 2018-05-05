@@ -37,8 +37,8 @@ class Dashboard extends Component {
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-server text-warning" />}
-                statsText="Capacity"
-                statsValue="105GB"
+                statsText="Total Unique Fans Engaged"
+                statsValue="401,0894"
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />

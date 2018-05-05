@@ -23,10 +23,16 @@ const dashboardRoutes = [
     component: TableList
   },
   { 
-    path: "/maps", 
-    name: "Fan Activity Map", 
-    icon: "pe-7s-map-marker", 
+    name: "Fan Engagement",
+    icon: "pe-7s-note2",
+    component: TableList
+  },
+  {
+    path: "/maps",
+    name: "Fan Activity Map",
+    icon: "pe-7s-map-marker"
     component: Maps },
+  
   { redirect: true, path: "/", to: "/dashboard", name: "Dashboard" }
 ];
 
