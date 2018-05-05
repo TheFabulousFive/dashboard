@@ -1,4 +1,4 @@
-import { MenuItem, Nav, NavDropdown, NavItem } from "react-bootstrap";
+import { Nav, NavItem } from "react-bootstrap";
 import React, { Component } from "react";
 
 class HeaderLinks extends Component {

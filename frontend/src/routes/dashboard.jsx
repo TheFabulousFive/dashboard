@@ -1,7 +1,6 @@
 import Dashboard from "views/Dashboard/Dashboard";
 import FestivalProfile from "views/FestivalProfile/FestivalProfile";
 import Maps from "views/Maps/Maps";
-
 import TableList from "views/TableList/TableList";
 
 const dashboardRoutes = [
