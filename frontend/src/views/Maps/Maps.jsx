@@ -1,23 +1,24 @@
-import React from "react";
 // react components used to create a google map
 import {
-  withScriptjs,
-  withGoogleMap,
   GoogleMap,
-  Marker
+  Marker,
+  withGoogleMap,
+  withScriptjs
 } from "react-google-maps";
+
+import React from "react";
 
 const CustomMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={16}
-      defaultCenter={{ lat: 36.2752507, lng: -115.0135269 }}
+      defaultZoom={30}
+      defaultCenter={{ lat: 28.539195, lng: -81.404758 }}
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true
       }}
     >
-      <Marker position={{ lat: 36.2752507, lng: -115.0135269 }} />
+      <Marker position={{ lat: 28.539195, lng: -81.404758 }} />
     </GoogleMap>
   ))
 );

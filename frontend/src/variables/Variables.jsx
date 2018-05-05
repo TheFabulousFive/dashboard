@@ -247,14 +247,15 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID", "DJ Name", "Fans Captured", "Positive", "Negative"];
+
+const thArray = ["ID", "DJ Name", "Stage", "Fans Captured", "Positive", "Negative"];
 const tdArray = [
-  ["1", "Alison Wonderland", "238,738", "238,700", "38"],
-  ["2", "Armin Van Buuren", "313,789", "313,700", "89"],
-  ["3", "Carnage", "56,142", "54,142", "2,000"],
-  ["4", "Dillon Francis", "199,735", "199,000", "735"],
-  ["5", "Mija", "118,542", "118,000", "542"],
-  ["6", "Porter Robinson", "288,615", "288,000", "615"]
+  ["1", "Alison Wonderland", "Boombox", "238,738", "238,700", "38"],
+  ["2", "Armin Van Buuren", "Neon Garden", "313,789", "313,700", "89"],
+  ["3", "Carnage", "Circuit Grounds", "56,142", "54,142", "2,000"],
+  ["4", "Dillon Francis","Magic Playground", "199,735", "199,000", "735"],
+  ["5", "Mija", "Magic Playground", "118,542", "118,000", "542"],
+  ["6", "Porter Robinson","Magic Playground", "288,615", "288,000", "615"]
 ];
 
 //

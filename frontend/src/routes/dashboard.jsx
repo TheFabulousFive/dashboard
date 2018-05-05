@@ -1,8 +1,8 @@
 import Dashboard from "views/Dashboard/Dashboard";
+// import Notifications from "views/Notifications/Notifications";
+import FanRengagement from "views/FanRengagement/FanRengagement";
 import FestivalProfile from "views/FestivalProfile/FestivalProfile";
 import Maps from "views/Maps/Maps";
-
-import FanEngagement from "views/FanEngagement/FanEngagement";
 
 const dashboardRoutes = [
   {
@@ -19,9 +19,8 @@ const dashboardRoutes = [
   },
   {
     path: "/table",
-    name: "Fan Engagement",
+    name: "Fan Rengagement",
     icon: "pe-7s-note2",
-    component: FanEngagement
   },
   {
     path: "/maps",
