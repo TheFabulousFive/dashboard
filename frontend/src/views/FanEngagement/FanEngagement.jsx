@@ -5,46 +5,46 @@ import { StatsCard } from "components/StatsCard/StatsCard.jsx";
 import Card from "components/Card/Card.jsx";
 import { thArray, tdArray } from "variables/Variables.jsx";
 
-class TableList extends Component {
+class FanEngagement extends Component {
   render() {
     return (
       <div className="content">
         <Grid fluid>
           <Row>
-            <Col lg={3} sm={6}>
+            <Col md={4}>
               <StatsCard
-                bigIcon={<i className="pe-7s-server text-warning" />}
+                bigIcon={<i className="pe-7s-users text-warning" />}
                 statsText="Total Unique Fans Engaged"
                 statsValue="401,0894"
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />
             </Col>
-            <Col lg={3} sm={6}>
+            <Col md={4}>
               <StatsCard
-                bigIcon={<i className="pe-7s-wallet text-success" />}
-                statsText="Revenue"
-                statsValue="$1,345"
+                bigIcon={<i className="pe-7s-headphones text-success" />}
+                statsText="Active Stages"
+                statsValue="8"
                 statsIcon={<i className="fa fa-calendar-o" />}
                 statsIconText="Last day"
               />
             </Col>
-
-            <Col lg={3} sm={6}>
+            <Col md={4}>
               <StatsCard
-                bigIcon={<i className="fa fa-twitter text-info" />}
-                statsText="Followers"
-                statsValue="+45"
+                bigIcon={<i className="pe-7s-smile text-info" />}
+                statsText="Fan Approval (out of 10)"
+                statsValue="9.5"
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />
             </Col>
           </Row>
+
           <Row>
             <Col md={12}>
               <Card
-                title="Striped Table with Hover"
-                category="Here is a subtitle for this table"
+                title="Fan Engagement during set"
+                category="Responses per act"
                 ctTableFullWidth
                 ctTableResponsive
                 content={
@@ -110,4 +110,4 @@ class TableList extends Component {
   }
 }
 
-export default TableList;
+export default FanEngagement;

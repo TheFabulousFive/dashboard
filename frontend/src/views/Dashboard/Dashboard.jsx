@@ -36,43 +36,43 @@ class Dashboard extends Component {
           <Row>
             <Col lg={3} sm={6}>
               <StatsCard
-                bigIcon={<i className="pe-7s-server text-warning" />}
-                statsText="Total Unique Fans Engaged"
-                statsValue="401,0894"
+                bigIcon={<i className="pe-7s-users text-success" />}
+                statsText="Fans Engaged in App"
+                statsValue="1,094"
                 statsIcon={<i className="fa fa-refresh" />}
-                statsIconText="Updated now"
+                statsIconText="In the last our"
               />
             </Col>
             <Col lg={3} sm={6}>
               <StatsCard
-                bigIcon={<i className="pe-7s-wallet text-success" />}
-                statsText="Revenue"
-                statsValue="$1,345"
+                bigIcon={<i className="pe-7s-users text-success" />}
+                statsText="Total Unique Fans Signed Up"
+                statsValue="401,0894"
                 statsIcon={<i className="fa fa-calendar-o" />}
                 statsIconText="Last day"
               />
             </Col>
             <Col lg={3} sm={6}>
               <StatsCard
-                bigIcon={<i className="pe-7s-graph1 text-danger" />}
-                statsText="Errors"
-                statsValue="23"
+                bigIcon={<i className="pe-7s-smile text-info" />}
+                statsText="Fan Reactions"
+                statsValue="9.5"
                 statsIcon={<i className="fa fa-clock-o" />}
-                statsIconText="In the last hour"
+                statsIconText="Out of 10"
               />
             </Col>
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="fa fa-twitter text-info" />}
                 statsText="Followers"
-                statsValue="+45"
+                statsValue="+45,000"
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />
             </Col>
           </Row>
           <Row>
-            <Col md={8}>
+            <Col>
               <Card
                 statsIcon="fa fa-history"
                 id="chartHours"
@@ -94,7 +94,7 @@ class Dashboard extends Component {
                 }
               />
             </Col>
-            <Col md={4}>
+            <Col>
               <Card
                 statsIcon="fa fa-clock-o"
                 title="Email Statistics"

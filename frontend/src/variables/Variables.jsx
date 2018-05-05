@@ -247,14 +247,14 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID", "Name", "Salary", "Country", "City"];
+const thArray = ["ID", "DJ Name", "Fans Captured", "Positive", "Negative"];
 const tdArray = [
-  ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-  ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-  ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-  ["4", "Philip Chaney", "$38,735", "Korea, South", "Overland Park"],
-  ["5", "Doris Greene", "$63,542", "Malawi", "Feldkirchen in Kärnten"],
-  ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+  ["1", "Alison Wonderland", "238,738", "238,700", "38"],
+  ["2", "Armin Van Buuren", "313,789", "313,700", "89"],
+  ["3", "Carnage", "56,142", "54,142", "2,000"],
+  ["4", "Dillon Francis", "199,735", "199,000", "735"],
+  ["5", "Mija", "118,542", "118,000", "542"],
+  ["6", "Porter Robinson", "288,615", "288,000", "615"]
 ];
 
 //
@@ -478,7 +478,7 @@ var dataPie = {
   series: [40, 20, 40]
 };
 var legendPie = {
-  names: ["Open", "Bounce", "Unsubscribe"],
+  names: ["Female", "Unknown", "Male"],
   types: ["info", "danger", "warning"]
 };
 
@@ -582,7 +582,7 @@ var legendBar = {
 module.exports = {
   style, // For notifications (App container and Notifications view)
   thArray,
-  tdArray, // For tables (TableList view)
+  tdArray, // For tables (FanEngagement view)
   iconsArray, // For icons (Icons view)
   dataPie,
   legendPie,

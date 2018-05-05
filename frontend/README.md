@@ -108,8 +108,8 @@ Light Bootstrap Dashboard React
         │   └── Maps.jsx
         ├── Notifications
         │   └── Notifications.jsx
-        ├── TableList
-        │   └── TableList.jsx
+        ├── FanEngagement
+        │   └── FanEngagement.jsx
         ├── Typography
         │   └── Typography.jsx
         ├── Upgrade
