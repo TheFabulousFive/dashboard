@@ -539,3 +539,27 @@
 .table-upgrade td:nth-child(3) {
     text-align: center;
 }
+
+/* New Styles */
+
+.card-stats {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+.card-stats .numbers {
+    padding-top: 1em;
+    font-size: 3em;
+    text-align: center;
+    color: #9013FE;
+}
+
+.card-stats .numbers p {
+    text-align: center;
+    color: #000000;
+}
+
+hr{
+    display: none;
+}
