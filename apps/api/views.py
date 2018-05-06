@@ -49,7 +49,6 @@ class AttendeeViewSet(GenericViewSet, CreateModelMixin, RetrieveModelMixin, Upda
 
         playlist = PlaylistEntry.objects.filter(attendee__user_id=user_id)
 
-        # FIXME: this is not serializing
         page = self.paginate_queryset(playlist)
         if page is not None:
             serializer = AttendeePlaylistEntrySerializer(page, many=True)
