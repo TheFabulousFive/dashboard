@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.viewsets import (GenericViewSet, ReadOnlyModelViewSet)
 
 from .models import Attendee, PlaylistEntry, SetlistEntry, Stage, DataEvent
-from .serializers import AttendeeSerializer, StageSerializer
+from .serializers import AttendeeSerializer, AttendeePlaylistEntrySerializer, StageSerializer
 
 
 def process_data_events():
@@ -52,10 +52,10 @@ class AttendeeViewSet(GenericViewSet, CreateModelMixin, RetrieveModelMixin, Upda
         # FIXME: this is not serializing
         page = self.paginate_queryset(playlist)
         if page is not None:
-            serializer = self.get_serializer(page, many=True)
+            serializer = AttendeePlaylistEntrySerializer(page, many=True)
             return self.get_paginated_response(serializer.data)
 
-        serializer = self.get_serializer(playlist, many=True)
+        serializer = AttendeePlaylistEntrySerializer(playlist, many=True)
         return Response(serializer.data)
 
 

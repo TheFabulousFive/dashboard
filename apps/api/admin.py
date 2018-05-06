@@ -1,6 +1,13 @@
 from django.contrib import admin
 
-from .models import (Attendee, ContentEvent, DataEvent, Performance, SetlistEntry, Song, Stage)
+from .models import (Attendee, DataEvent, Performance, PlaylistEntry, SetlistEntry, Song, Stage)
+
+
+class PlaylistEntryInline(admin.TabularInline):
+    readonly_fields = ('attendee', 'song', 'performance', 'event_type', 'timestamp')
+    model = PlaylistEntry
+    can_delete = False
+    max_num = 0
 
 
 class SetlistEntryInline(admin.TabularInline):
@@ -12,12 +19,8 @@ class SetlistEntryInline(admin.TabularInline):
 
 @admin.register(Attendee)
 class AttendeeAdmin(admin.ModelAdmin):
+    inlines = [PlaylistEntryInline]
     list_display = ('user_id',)
-
-
-@admin.register(ContentEvent)
-class ContentEventAdmin(admin.ModelAdmin):
-    pass
 
 
 @admin.register(DataEvent)
