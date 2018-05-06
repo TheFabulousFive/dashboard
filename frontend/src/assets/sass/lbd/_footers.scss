@@ -1,15 +1,15 @@
-.footer{    
+.footer{
     background-color: $white-color;
     line-height: $line-height;
-    
+
     nav > ul{
         list-style: none;
         margin: 0;
         padding: 0;
         font-weight: normal;
-        
+
         a:not(.btn){
-            color: $dark-gray;
+            color: whitesmoke;
             display: block;
             margin-bottom: 3px;
             &:hover,
@@ -25,7 +25,7 @@
         }
     }
     .social-area > a:not(.btn){
-       color: $dark-gray;
+       color: whitesmoke;
        display: inline-block;
        vertical-align: top;
        padding: $padding-social-a;
@@ -39,7 +39,7 @@
        }
     }
     .copyright{
-        color: $default-states-color;
+        color: whitesmoke;
         padding: 10px 15px;
         margin: 10px 3px;
         line-height: 20px;

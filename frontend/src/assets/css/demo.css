@@ -550,7 +550,11 @@
 
 .card-stats .numbers {
     /* padding-top: 1em; */
+<<<<<<< HEAD
     font-size: 5em;
+=======
+    font-size: 3em;
+>>>>>>> cac12509f38e6d4a7934bb45bbdea91b273df386
     text-align: center;
     color: #9013FE;
 }
