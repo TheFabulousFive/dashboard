@@ -34,7 +34,7 @@ def festival_profile(request):
 
 def engagement(request):
     context = {
-        'props': _get_props('TableList', {'title': 'Fan Engagement'})
+        'props': _get_props('FanEngagement', {'title': 'Fan Engagement'})
     }
     return _render_index(request, context)
 
