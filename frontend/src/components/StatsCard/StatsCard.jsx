@@ -13,8 +13,12 @@ export class StatsCard extends Component {
               </div>
             </Col>
             <Col xs={7}>
+              <p dangerouslySetInnerHTML={{__html: this.props.statsText}}></p>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}>
               <div className="numbers">
-                <p>{this.props.statsText}</p>
                 {this.props.statsValue}
               </div>
             </Col>

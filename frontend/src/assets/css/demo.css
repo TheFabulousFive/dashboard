@@ -549,7 +549,7 @@
 }
 
 .card-stats .numbers {
-    padding-top: 1em;
+    /* padding-top: 1em; */
     font-size: 3em;
     text-align: center;
     color: #9013FE;
