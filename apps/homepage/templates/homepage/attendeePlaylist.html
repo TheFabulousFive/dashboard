@@ -1,12 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Playlist</title>
-</head>
-<body>
+{% extends 'homepage/_base.html' %}
 
-</body>
-</html>
+{% block styles%}
+<style>
+  .brand-name {
+    color: #C711D4;
+    font-weight: bold;
+  }
+
+  .playlist__wrapper {
+    position: relative;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .playlist {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 1em 2em;
+    overflow-y: scroll;
+    height: 55vh;
+  }
+
+  .playlist__header {
+    background: rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    font-size: 1.75em;
+    padding: 0.5em;
+    font-family: 'Ramabhadra', sans-serif;
+  }
+
+  .playlist__footer {
+    color: rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .entry {
+    line-height: 3em;
+    vertical-align: middle;
+  }
+
+  .stage {
+    display: inline;
+    float: left;
+    color: rgba(0,0,0,0.4);
+    margin-right: 0.5em;
+  }
+
+  .track {
+    text-align: left;
+  }
+
+  .track__title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .track__artist::before {
+    content: ' - ';
+  }
+
+  .vendors {
+    display: inline;
+    float: right;
+  }
+
+  .vendors .fab {
+    padding: 0 0 0 0.5em;
+  }
+
+  .fab::before {
+    font-size: 1.25em;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .playlist__wrapper {
+      margin: 0.5em;
+    }
+
+    .playlist {
+      height: 75vh;
+    }
+
+    .entry {
+      line-height: 2em;
+    }
+
+    .track__artist, .track__title {
+      display: inline-block;
+    }
+
+    .track {
+      padding-bottom: 0.75em;
+    }
+
+    .track__artist::before {
+      content: '';
+    }
+
+    .fab::before {
+      font-size: 1.75em;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="playlist__wrapper">
+  <div class="playlist__header">your <strong>{{ event_title }}</strong> <span class="brand-name">afterparty</span>:</div>
+  <div class="playlist">
+  {% for playlist_entry in entries %}
+    <div class="entry">
+      <p class="stage">
+        {{ playlist_entry.performance.location.name }}
+      </p>
+      <p class="vendors">
+        <a href="#"><i class="fab fa-amazon"></i></a>
+        <a href="#"><i class="fab fa-spotify"></i></i></a>
+        <a href="#"><i class="fab fa-itunes-note"></i></a>
+      </p>
+      <p class="track">
+          <span class="track__title">{{ playlist_entry.song.title }}</span><span class="track__artist">{{ playlist_entry.song.artist }}</span>
+      </p>
+    </div>
+    {% endfor %}
+    <div class="playlist__footer">
+
+    </div>
+  </div>
+</div>
+{% endblock %}

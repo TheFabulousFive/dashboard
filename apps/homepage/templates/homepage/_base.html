@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>After Party</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ramabhadra" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-family: 'Ramabhadra', sans-serif;
+      color: #C711D4;
+      text-transform: lowercase;
+      font-size: 6em;
+    }
+
+    .copy {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2em;
+      margin-bottom: 1.5em;
+    }
+
+    #hero {
+      height: 100vh;
+      width: 100vw;
+      background: url({% static 'homepage/hero.jpg' %});
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    #content {
+      margin: auto;
+      text-align: center;
+    }
+
+    .links {
+      font-size: 1.35em;
+      color: #C711D4;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links > li {
+      display: inline;
+    }
+
+    .links > li:first-of-type {
+      margin-right: 15em;
+    }
+  </style>
+  {% block styles %}{% endblock %}
+</head>
+<body>
+    <div id="hero">
+      <div id="content">
+      {% block content %}{% endblock %}
+      </div>
+    </div>
+</body>
+</html>

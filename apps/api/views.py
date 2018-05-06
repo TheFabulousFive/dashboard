@@ -13,13 +13,18 @@ def process_data_events():
     queryset = DataEvent.objects.filter(processed=False)
 
     for obj in queryset:
-        performance = obj.location.performance_set.filter(start_time__lte=obj.timestamp,
-                                                          end_time__gt=obj.timestamp).first()
+        performance = obj.location.performance_set.filter(
+            start_time__lte=obj.timestamp,
+            end_time__gt=obj.timestamp,
+        ).first()
 
         if performance is None:
             continue
 
-        setlist_entry = SetlistEntry.objects.filter(performance=performance, start_time__lte=obj.timestamp).last()
+        setlist_entry = SetlistEntry.objects.filter(
+            performance=performance,
+            start_time__lte=obj.timestamp,
+        ).last()
 
         if setlist_entry is None:
             continue
