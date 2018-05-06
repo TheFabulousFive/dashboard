@@ -4,32 +4,40 @@ import FanEngagement from "views/FanEngagement/FanEngagement";
 import FestivalProfile from "views/FestivalProfile/FestivalProfile";
 import Maps from "views/Maps/Maps";
 
+const rootUrl = '/dashboard';
+
+export const DASHBOARD_COMPONENTS = {
+  'Dashboard': Dashboard,
+  'FestivalProfile': FestivalProfile,
+  'Maps': Maps,
+  'FanEngagement': FanEngagement,
+};
+
 const dashboardRoutes = [
   {
-    path: "/dashboard",
+    path: `${rootUrl}/`,
     name: "Dashboard",
     icon: "pe-7s-graph",
-    component: Dashboard,
+    component: DASHBOARD_COMPONENTS.Dashboard,
   },
   {
-    path: "/user",
+    path: `${rootUrl}/festival-profile/`,
     name: "Festival Profile",
     icon: "pe-7s-user",
-    component: FestivalProfile,
+    component: DASHBOARD_COMPONENTS.FestivalProfile,
   },
   {
-    path: "/engagement",
+    path: `${rootUrl}/engagement/`,
     name: "Fan Engagement",
     icon: "pe-7s-note2",
-    component: FanEngagement
+    component: DASHBOARD_COMPONENTS.FanEngagement,
   },
   {
-    path: "/maps",
+    path: `${rootUrl}/activity-map/`,
     name: "Fan Activity Map",
     icon: "pe-7s-map-marker",
-    component: Maps,
+    component: DASHBOARD_COMPONENTS.Maps,
   },
-  { redirect: true, path: "/", to: "/dashboard", name: "Dashboard" }
 ];
 
 export default dashboardRoutes;

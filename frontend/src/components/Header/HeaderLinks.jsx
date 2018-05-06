@@ -5,8 +5,8 @@ class HeaderLinks extends Component {
   render() {
     return (
       <div>
-        <Nav>
-          <NavItem eventKey={1} href="#">
+        <Nav style={{ float: 'right' }}>
+          <NavItem eventKey={1} href="/">
             Log out
           </NavItem>
         </Nav>

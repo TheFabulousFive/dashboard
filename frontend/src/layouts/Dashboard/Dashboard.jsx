@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
 
 import Header from "components/Header/Header";
 import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
 
-import dashboardRoutes from "routes/dashboard.jsx";
+import { DASHBOARD_COMPONENTS } from "routes/dashboard.jsx";
 
 class Dashboard extends Component {
   componentDidUpdate(e) {
@@ -28,15 +27,7 @@ class Dashboard extends Component {
         <Sidebar {...this.props} />
         <div id="main-panel" className="main-panel" ref="mainPanel">
           <Header {...this.props} />
-          <Switch>
-            {dashboardRoutes.map((prop, key) => {
-              if (prop.redirect)
-                return <Redirect from={prop.path} to={prop.to} key={key} />;
-              return (
-                <Route path={prop.path} component={prop.component} key={key} />
-              );
-            })}
-          </Switch>
+          {React.createElement(DASHBOARD_COMPONENTS[this.props.viewData.component], this.props)}
           <Footer />
         </div>
       </div>
