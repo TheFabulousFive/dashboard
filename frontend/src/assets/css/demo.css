@@ -543,6 +543,30 @@
 /* New Styles */
 
 .card-stats {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+.card-stats .numbers {
+    padding-top: 1em;
+    font-size: 3em;
+    text-align: center;
+    color: #9013FE;
+}
+
+.card-stats .numbers p {
+    text-align: center;
+    color: #000000;
+}
+
+hr{
+    display: none;
+}
+=======
+/* New Styles */
+
+.card-stats {
     /* height: 200px;
     width: 300px; */
     text-align: center;
@@ -550,11 +574,9 @@
 
 .card-stats .numbers {
     /* padding-top: 1em; */
-<<<<<<< HEAD
+
     font-size: 5em;
-=======
     font-size: 3em;
->>>>>>> cac12509f38e6d4a7934bb45bbdea91b273df386
     text-align: center;
     color: #9013FE;
 }

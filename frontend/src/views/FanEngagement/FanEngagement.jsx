@@ -23,6 +23,7 @@ class FanEngagement extends Component {
             <Col md={4}>
               <StatsCard
                 bigIcon={<i className="pe-7s-headphones text-success" />}
+                statsText="Active Stages"
                 statsText="Active<br>Stages"
                 statsValue="8"
                 statsIcon={<i className="fa fa-calendar-o" />}
@@ -32,6 +33,7 @@ class FanEngagement extends Component {
             <Col md={4}>
               <StatsCard
                 bigIcon={<i className="pe-7s-smile text-info" />}
+                statsText="Fan Approval (out of 10)"
                 statsText="Fan Approval<br>(out of 10)"
                 statsValue="9.5"
                 statsIcon={<i className="fa fa-refresh" />}
