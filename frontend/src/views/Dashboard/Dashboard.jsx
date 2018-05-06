@@ -37,6 +37,8 @@ class Dashboard extends Component {
             <Card
               title="Striped Table with Hover"
               category="Here is a subtitle for this table"
+              title="Artist to Fan Engagement"
+              category="How each artist is engaging fans in realtime."
               ctTableFullWidth
               ctTableResponsive
               content={

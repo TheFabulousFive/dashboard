@@ -1578,7 +1578,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     padding: 0;
     font-weight: normal; }
     .footer nav > ul a:not(.btn) {
-      color: #9A9A9A;
+      color: whitesmoke;
       display: block;
       margin-bottom: 3px; }
       .footer nav > ul a:not(.btn):hover, .footer nav > ul a:not(.btn):focus {
@@ -1588,7 +1588,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     .footer .social-area h5 {
       padding-bottom: 15px; }
   .footer .social-area > a:not(.btn) {
-    color: #9A9A9A;
+    color: whitesmoke;
     display: inline-block;
     vertical-align: top;
     padding: 10px 5px;
@@ -1599,7 +1599,7 @@ body > .navbar-collapse[data-color="purple"]:after {
     .footer .social-area > a:not(.btn):hover, .footer .social-area > a:not(.btn):focus {
       color: #777777; }
   .footer .copyright {
-    color: #777777;
+    color: whitesmoke;
     padding: 10px 15px;
     margin: 10px 3px;
     line-height: 20px;
