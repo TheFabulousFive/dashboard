@@ -2,8 +2,8 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 DATA_EVENT_TYPE = [
-    ('up', _("Up")),
-    ('dn', _("Down")),
+    ('up', _("\N{thumbs up sign}")),
+    ('dn', _("\N{thumbs down sign}")),
 ]
 
 
@@ -24,8 +24,7 @@ class Attendee(models.Model):
 
 class ContentEvent(models.Model):
     """Content events are information gathered from the content ID API."""
-    # TODO: change to location
-    performance = models.ForeignKey('Performance', models.PROTECT)
+    location = models.ForeignKey('Stage', models.PROTECT)
     timestamp = models.DateTimeField(_("timestamp"), auto_now_add=True)
 
     class Meta:
