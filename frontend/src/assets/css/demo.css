@@ -543,14 +543,14 @@
 /* New Styles */
 
 .card-stats {
-    height: 200px;
-    width: 300px;
+    /* height: 200px;
+    width: 300px; */
     text-align: center;
 }
 
 .card-stats .numbers {
-    padding-top: 1em;
-    font-size: 3em;
+    /* padding-top: 1em; */
+    font-size: 5em;
     text-align: center;
     color: #9013FE;
 }
