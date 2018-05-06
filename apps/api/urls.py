@@ -9,6 +9,7 @@ v1_router.register(r'attendees', views.AttendeeViewSet)
 v1_router.register(r'stages', views.StageViewSet)
 
 urlpatterns = [
-    path('v1/', include(v1_router.urls)),
     path('docs/', include_docs_urls(title='AfterParty API Docs')),
+    path('v1/', include(v1_router.urls)),
+    path('v1/stats/', views.ListStats.as_view(), name='list_stats'),
 ]
