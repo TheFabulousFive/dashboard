@@ -7,15 +7,6 @@
     font-weight: bold;
   }
 
-  .playlist__wrapper {
-    position: relative;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
-    max-width: 800px;
-    margin: auto;
-  }
-
   .playlist {
     background: rgba(255, 255, 255, 0.5);
     padding: 1em 2em;
@@ -79,10 +70,6 @@
   }
 
   @media only screen and (max-width: 480px) {
-    .playlist__wrapper {
-      margin: 0.5em;
-    }
-
     .playlist {
       height: 75vh;
     }
@@ -111,7 +98,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="playlist__wrapper">
+<div class="floating-card">
   <div class="playlist__header">your <strong>{{ event_title }}</strong> <span class="brand-name">afterparty</span>:</div>
   <div class="playlist">
   {% for playlist_entry in entries %}

@@ -1,0 +1,30 @@
+{% extends 'homepage/_base.html' %}
+{% load static %}
+
+{% block styles %}
+<style>
+  img {
+    width: auto;
+    height: 450px;
+  }
+
+  .floating-card {
+    background: rgba(255,255,255,0.8);
+    min-height: 450px;
+    max-width: initial;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<h2 class="title">
+  EDC Vegas 2018
+</h2>
+<div class="floating-card">
+  <img src="{% static 'homepage/mixmaster_kale.jpg' %}" alt="Mixmaster Kale">
+  <h3 class="copy">
+    with performances by up-and-comer<br>
+    💿 <em>M I X M A S T E R &middot; K A L E</em> 📀
+  </h3>
+</div>
+{% endblock %}

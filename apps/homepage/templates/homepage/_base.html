@@ -66,6 +66,21 @@
     .links > li:first-of-type {
       margin-right: 15em;
     }
+
+    .floating-card {
+      position: relative;
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+      -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .floating-card {
+        margin: 0.5em;
+      }
+    }
   </style>
   {% block styles %}{% endblock %}
 </head>

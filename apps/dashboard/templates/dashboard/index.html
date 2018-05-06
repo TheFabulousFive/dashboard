@@ -20,6 +20,7 @@
 
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
         <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+        {% if main_css %}<link href="{% static main_css %}" rel="stylesheet">{% endif %}
 
     </head>
     <body>
@@ -34,5 +35,6 @@
           window.props = {{ props | json }};
         </script>
         {% if bundle_js %}<script type="text/javascript" src="{{ bundle_js }}"></script>{% endif %}
+        {% if main_js %}<script type="text/javascript" src="{% static main_js %}"></script>{% endif %}
     </body>
 </html>

@@ -29,3 +29,7 @@ def attendee_list(request, user_id):
         'event_title': 'EDC Vegas 2018',
     }
     return render(request, 'homepage/attendeePlaylist.html', context)
+
+
+def edc(request):
+    return render(request, 'homepage/edc.html')
