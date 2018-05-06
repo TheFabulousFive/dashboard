@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
@@ -25,7 +27,7 @@ class Attendee(models.Model):
 class ContentEvent(models.Model):
     """Content events are information gathered from the content ID API."""
     location = models.ForeignKey('Stage', models.PROTECT)
-    timestamp = models.DateTimeField(_('timestamp'), auto_now_add=True)
+    timestamp = models.DateTimeField(_('timestamp'), default=datetime.datetime.now)
 
     class Meta:
         verbose_name = _('content event')
@@ -37,7 +39,7 @@ class DataEvent(models.Model):
     event_type = models.CharField(_('event type'), max_length=2, choices=DATA_EVENT_TYPE)
     attendee = models.ForeignKey('Attendee', models.PROTECT)
     location = models.ForeignKey('Stage', models.PROTECT)
-    timestamp = models.DateTimeField(_('timestamp'), auto_now_add=True)
+    timestamp = models.DateTimeField(_('timestamp'), default=datetime.datetime.now)
 
     class Meta:
         verbose_name = _('data event')
@@ -69,7 +71,7 @@ class SetlistEntry(models.Model):
     """Entry in a setlist"""
     performance = models.ForeignKey('Performance', on_delete=models.CASCADE)
     song = models.ForeignKey('Song', on_delete=models.CASCADE)
-    start_time = models.DateTimeField(_('start time'))
+    start_time = models.DateTimeField(_('start time'), default=datetime.datetime.now)
 
     class Meta:
         ordering = ('start_time',)

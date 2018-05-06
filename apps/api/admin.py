@@ -12,7 +12,7 @@ class SetlistEntryInline(admin.TabularInline):
 
 @admin.register(Attendee)
 class AttendeeAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('user_id',)
 
 
 @admin.register(ContentEvent)
@@ -22,7 +22,7 @@ class ContentEventAdmin(admin.ModelAdmin):
 
 @admin.register(DataEvent)
 class DataEventAdmin(admin.ModelAdmin):
-    pass
+    raw_id_fields = ('attendee',)
 
 
 @admin.register(Performance)
