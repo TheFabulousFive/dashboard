@@ -38,7 +38,7 @@ class Performance(models.Model):
         verbose_name_plural = _('performances')
 
     def __str__(self):
-        return f"{self.__class__.__name__} object ({self.name})"
+        return "{} object ({})".format(self.__class__.__name__, self.name)
 
     @property
     def duration(self):
@@ -72,7 +72,7 @@ class Song(models.Model):
     cover = models.URLField(_("cover"), blank=True)
 
     def __str__(self):
-        return f"{self.__class__.__name__} object ({self.artist} - {self.title})"
+        return "{} object ({} - {})".format(self.__class__.__name__, self.artist, self.title)
 
 
 class Stage(models.Model):
@@ -85,7 +85,7 @@ class Stage(models.Model):
         verbose_name_plural = _('stages')
 
     def __str__(self):
-        return f"{self.__class__.__name__} object ({self.name})"
+        return "{} object ({})".format(self.__class__.__name__, self.name)
 
 
 ##

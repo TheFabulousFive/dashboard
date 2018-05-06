@@ -71,6 +71,6 @@ class StatsViewSet(GenericViewSet):
         last_10 = self.get_queryset()[:10]
         for event in last_10:
             to_return.append(
-                f"Someone thumbs-{event.event_type}'d a song at {event.location.name}"
+                "Someone thumbs-{}'d a song at {}".format(event.event_type, event.location.name)
             )
         return Response(to_return)
