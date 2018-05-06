@@ -11,7 +11,7 @@ import React from "react";
 const CustomMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
-      defaultZoom={30}
+      defaultZoom={18}
       defaultCenter={{ lat: 28.539195, lng: -81.404758 }}
       defaultOptions={{
         scrollwheel: false,
