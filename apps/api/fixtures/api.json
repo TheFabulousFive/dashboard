@@ -1,0 +1,581 @@
+[
+  {
+    "model": "api.performance",
+    "pk": 2,
+    "fields": {
+      "slug": "afrojack",
+      "name": "Afrojack",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 3,
+    "fields": {
+      "slug": "alan-walker",
+      "name": "Alan Walker",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 4,
+    "fields": {
+      "slug": "chris-lake",
+      "name": "Chris Lake",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 5,
+    "fields": {
+      "slug": "dash-berlin",
+      "name": "Dash Berlin",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 6,
+    "fields": {
+      "slug": "dimitri-vegas-mike",
+      "name": "Dimitri Vegas & Like Mike",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 7,
+    "fields": {
+      "slug": "diplo",
+      "name": "Diplo",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 8,
+    "fields": {
+      "slug": "dombresky",
+      "name": "Dombresky",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 9,
+    "fields": {
+      "slug": "don-diablo",
+      "name": "Don Diablo",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 10,
+    "fields": {
+      "slug": "firebeatz-vs-dubvision",
+      "name": "Firebeatz vs. DubVision",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 11,
+    "fields": {
+      "slug": "jauz",
+      "name": "Jauz",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 12,
+    "fields": {
+      "slug": "joyryde",
+      "name": "JOYRYDE",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 13,
+    "fields": {
+      "slug": "kaskade",
+      "name": "Kaskade",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 14,
+    "fields": {
+      "slug": "kygo",
+      "name": "Kygo",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 15,
+    "fields": {
+      "slug": "marshmello",
+      "name": "Marshmello",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 16,
+    "fields": {
+      "slug": "mercer",
+      "name": "Mercer",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 17,
+    "fields": {
+      "slug": "moksi",
+      "name": "Moksi",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 18,
+    "fields": {
+      "slug": "nghtmre",
+      "name": "NGHTMRE",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 19,
+    "fields": {
+      "slug": "seven-lions",
+      "name": "Seven Lions",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 20,
+    "fields": {
+      "slug": "slander",
+      "name": "Slander",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 21,
+    "fields": {
+      "slug": "slushii",
+      "name": "Slushii",
+      "location": 1,
+      "start_time": "2018-05-18T22:00:00Z",
+      "end_time": "2018-05-18T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 22,
+    "fields": {
+      "slug": "spaceprodigi",
+      "name": "spaceprodigi",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 23,
+    "fields": {
+      "slug": "tiesto",
+      "name": "Ti\u00ebsto",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 24,
+    "fields": {
+      "slug": "vini-vici",
+      "name": "Vini Vici",
+      "location": 1,
+      "start_time": "2018-05-19T22:00:00Z",
+      "end_time": "2018-05-19T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 25,
+    "fields": {
+      "slug": "zedd",
+      "name": "Zedd",
+      "location": 1,
+      "start_time": "2018-05-20T22:00:00Z",
+      "end_time": "2018-05-20T23:00:00Z"
+    }
+  },
+  {
+    "model": "api.performance",
+    "pk": 26,
+    "fields": {
+      "slug": "mixmaster-kale",
+      "name": "Mixmaster Kale",
+      "location": 11,
+      "start_time": "2018-05-05T19:00:00Z",
+      "end_time": "2018-05-05T19:45:00Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 1,
+    "fields": {
+      "performance": 26,
+      "song": 1,
+      "start_time": "2018-05-05T19:00:00Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 2,
+    "fields": {
+      "performance": 26,
+      "song": 2,
+      "start_time": "2018-05-05T19:03:56Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 3,
+    "fields": {
+      "performance": 26,
+      "song": 3,
+      "start_time": "2018-05-05T19:09:32Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 4,
+    "fields": {
+      "performance": 26,
+      "song": 4,
+      "start_time": "2018-05-05T19:12:53Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 5,
+    "fields": {
+      "performance": 26,
+      "song": 5,
+      "start_time": "2018-05-05T19:15:46Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 6,
+    "fields": {
+      "performance": 26,
+      "song": 6,
+      "start_time": "2018-05-05T19:19:16Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 7,
+    "fields": {
+      "performance": 26,
+      "song": 7,
+      "start_time": "2018-05-05T19:22:19Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 8,
+    "fields": {
+      "performance": 26,
+      "song": 8,
+      "start_time": "2018-05-05T19:25:28Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 9,
+    "fields": {
+      "performance": 26,
+      "song": 9,
+      "start_time": "2018-05-05T19:30:39Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 10,
+    "fields": {
+      "performance": 26,
+      "song": 10,
+      "start_time": "2018-05-05T19:33:47Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 11,
+    "fields": {
+      "performance": 26,
+      "song": 11,
+      "start_time": "2018-05-05T19:37:46Z"
+    }
+  },
+  {
+    "model": "api.setlistentry",
+    "pk": 12,
+    "fields": {
+      "performance": 26,
+      "song": 12,
+      "start_time": "2018-05-05T19:41:25Z"
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 1,
+    "fields": {
+      "artist": "Filous",
+      "title": "Feel Good Inc. (ft. LissA)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 2,
+    "fields": {
+      "artist": "Nora En Pure",
+      "title": "Morning Dew (Original Mix)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 3,
+    "fields": {
+      "artist": "Boehm",
+      "title": "Future Self feat. Melody Noel",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 4,
+    "fields": {
+      "artist": "Syn Cole",
+      "title": "Californication (ft. Caroline Pennell)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 5,
+    "fields": {
+      "artist": "Sam Feldt X Lush & Simon",
+      "title": "Fade Away (ft. INNA)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 6,
+    "fields": {
+      "artist": "M\u00d6WE",
+      "title": "Around The World (ft. Lisa Pac)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 7,
+    "fields": {
+      "artist": "Gostan",
+      "title": "City Of Angels (ft. Wasteland, Astrid Ripepi)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 8,
+    "fields": {
+      "artist": "Zonoma",
+      "title": "Don't Let Me Down (Tropical House Mix)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 9,
+    "fields": {
+      "artist": "Sophie Elise",
+      "title": "Love Like That (Edeema Remix)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 10,
+    "fields": {
+      "artist": "Edeema & Jabaman",
+      "title": "This Is My Day",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 11,
+    "fields": {
+      "artist": "Kygo",
+      "title": "Stay (ft. Maty Noyes)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.song",
+    "pk": 12,
+    "fields": {
+      "artist": "Peking Duk",
+      "title": "Let You Down (ft. Icona Pop)",
+      "cover": ""
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 1,
+    "fields": {
+      "slug": "kinetic-field",
+      "name": "kineticFIELD"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 2,
+    "fields": {
+      "slug": "cosmic-meadow",
+      "name": "cosmicMEADOW"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 3,
+    "fields": {
+      "slug": "circuit-grounds",
+      "name": "circuitGROUNDS"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 4,
+    "fields": {
+      "slug": "neon-garden",
+      "name": "neonGARDEN"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 5,
+    "fields": {
+      "slug": "bass-pod",
+      "name": "bassPOD"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 6,
+    "fields": {
+      "slug": "waste-land",
+      "name": "wasteLAND"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 7,
+    "fields": {
+      "slug": "quantum-valley",
+      "name": "quantumVALLEY"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 8,
+    "fields": {
+      "slug": "stereo-bloom",
+      "name": "stereoBLOOM"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 9,
+    "fields": {
+      "slug": "parliament-art-car",
+      "name": "Parliament Art Car"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 10,
+    "fields": {
+      "slug": "wide-awake-art-car",
+      "name": "Wide Awake Art Car"
+    }
+  },
+  {
+    "model": "api.stage",
+    "pk": 11,
+    "fields": {
+      "slug": "hack-till-dawn",
+      "name": "Hack Till Dawn"
+    }
+  }
+]

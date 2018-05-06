@@ -51,17 +51,40 @@ class Performance(models.Model):
     location = models.ForeignKey('Stage', models.PROTECT)
     start_time = models.DateTimeField(_('start time'))
     end_time = models.DateTimeField(_('end time'))
+    setlist = models.ManyToManyField('Song', through='SetlistEntry', through_fields=('performance', 'song'))
 
     class Meta:
         verbose_name = _('performance')
         verbose_name_plural = _('performances')
 
+    def __str__(self):
+        return f"{self.__class__.__name__} object ({self.name})"
+
     @property
     def duration(self):
         return self.end_time - self.start_time
 
+
+class SetlistEntry(models.Model):
+    """Entry in a setlist"""
+    performance = models.ForeignKey('Performance', on_delete=models.CASCADE)
+    song = models.ForeignKey('Song', on_delete=models.CASCADE)
+    start_time = models.DateTimeField(_('start time'))
+
+    class Meta:
+        ordering = ('start_time',)
+        verbose_name = _("setlist entry")
+        verbose_name_plural = _("setlist entries")
+
+
+class Song(models.Model):
+    """Song information"""
+    artist = models.CharField(_("artist"), max_length=100)
+    title = models.CharField(_("title"), max_length=200)
+    cover = models.URLField(_("cover"), blank=True)
+
     def __str__(self):
-        return self.name
+        return f"{self.__class__.__name__} object ({self.artist} - {self.title})"
 
 
 class Stage(models.Model):
@@ -74,4 +97,4 @@ class Stage(models.Model):
         verbose_name_plural = _('stages')
 
     def __str__(self):
-        return self.name
+        return f"{self.__class__.__name__} object ({self.name})"
